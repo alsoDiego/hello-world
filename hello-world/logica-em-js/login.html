@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso ao sistema</title>
+</head>
+<body>
+    <script>
+
+        var loginCadastrado = "alura";
+        var senhaCadastrada = "alura321";
+        var tentativa = 1;
+    
+        while(tentativa <= 3) {
+            var loginInformado = prompt("Informe seu login");
+            var senhaInformada = prompt("Informe sua senha");
+
+            if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
+    
+                alert("Bem-vindo ao sistema " + loginInformado);
+               // tentativa = tentativa + 4
+                break
+                
+            } else {
+    
+                alert("Login inválido.");
+                tentativa = tentativa + 1
+            }
+        }
+        if(tentativa == 4) {
+            alert("Número de tentativas excedido.")
+        }
+    </script>
+</body>
+</html>
