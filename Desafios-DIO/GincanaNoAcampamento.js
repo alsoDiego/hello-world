@@ -35,16 +35,20 @@ while (quantidadeDeAlunos !== 0) {
     //Determina o vencedor
     let senhaVencedora = [...senhas];
     let senhaDaRodada = senhas[0];
-    let i = Number;
+    let alunoSai;
+    let indice = senhaVencedora.indexOf(senhaDaRodada);
+    let resto = (senhaDaRodada % senhaVencedora.length);
 
-    while (senhaVencedora.length > 1) {
+    for (let circulo = senhaVencedora.length; circulo > 1; circulo--) {
         if (senhaDaRodada % 2 === 0) {
-            i = (senhaDaRodada % senhaVencedora.length) - 1;
+            alunoSai = parseInt( indice - resto + senhaVencedora.length )
         } else {
-            i = (senhaDaRodada % senhaVencedora.length) - 1;
+            alunoSai = parseInt( indice + resto - senhaVencedora.length )
         }
-        senhaDaRodada = senhaVencedora[i];
-        senhaVencedora = senhaVencedora.slice(indexOf(senhaDaRodada));
+        senhaDaRodada = senhaVencedora[alunoSai];
+        senhaVencedora = senhaVencedora.slice(alunoSai);
+        resto = senhaDaRodada % senhaVencedora.length;
+        indice = alunoSai;
     }
     senhaVencedora = parseInt(senhaVencedora);
     let vencedor = alunos[senhas.indexOf(senhaVencedora)];
