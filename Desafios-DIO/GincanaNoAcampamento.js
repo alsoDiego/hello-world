@@ -33,21 +33,34 @@ while (quantidadeDeAlunos !== 0) {
     }
 
     //Determina o vencedor
-    let senhaVencedora = [...senhas];
-    let senhaDaRodada = senhas[0];
     let alunoSai;
-    let indice = senhaVencedora.indexOf(senhaDaRodada);
-    let resto = (senhaDaRodada % senhaVencedora.length);
+    let indice = 0;
+    let senhaVencedora = [...senhas];
+    let pularPosicoes = senhaVencedora[0];
+    let circulo = senhaVencedora.length;
+    let resto = (pularPosicoes % circulo);
 
-    for (let circulo = senhaVencedora.length; circulo > 1; circulo--) {
-        if (senhaDaRodada % 2 === 0) {
-            alunoSai = parseInt( indice - resto + senhaVencedora.length )
+    for (circulo; circulo > 1; circulo--) {
+        if (pularPosicoes % 2 === 0) {
+            //Percorre no sentido anti-horário
+            alunoSai = parseInt(indice - resto);
+            if (Math.abs(alunoSai) >= senhaVencedora.length) {
+                //Força o index para dentro do array
+                alunoSai += senhaVencedora.length;
+            }
         } else {
-            alunoSai = parseInt( indice + resto - senhaVencedora.length )
+            //Percorre no sentido horário
+            alunoSai = parseInt(indice + resto);
+            if (alunoSai >= senhaVencedora.length) {
+                //Força o index para dentro do array
+                alunoSai -= senhaVencedora.length;
+            }
         }
-        senhaDaRodada = senhaVencedora[alunoSai];
+        alunoSai >=0
+            ? pularPosicoes = senhaVencedora[alunoSai]
+            : pularPosicoes = senhaVencedora[senhaVencedora.length + alunoSai];
         senhaVencedora = senhaVencedora.slice(alunoSai);
-        resto = senhaDaRodada % senhaVencedora.length;
+        resto = pularPosicoes % senhaVencedora.length;
         indice = alunoSai;
     }
     senhaVencedora = parseInt(senhaVencedora);
@@ -57,13 +70,13 @@ while (quantidadeDeAlunos !== 0) {
     quantidadeDeAlunos = parseInt(gets());
 };
 /*
-if (senhaDaRodada % 2 === 0) {
-    i = (senhaDaRodada % quantidadeDeAlunos) - 1;
-    senhaDaRodada = senhaVencedora[senhaVencedora.length - i];
+if (pularPosicoes % 2 === 0) {
+    i = (pularPosicoes % quantidadeDeAlunos) - 1;
+    pularPosicoes = senhaVencedora[senhaVencedora.length - i];
     senhaVencedora = senhaVencedora.slice(-i);
 } else {
-    i = (senhaDaRodada % quantidadeDeAlunos) - 1;
-    senhaDaRodada = senhaVencedora[i];
+    i = (pularPosicoes % quantidadeDeAlunos) - 1;
+    pularPosicoes = senhaVencedora[i];
     senhaVencedora = senhaVencedora.slice(i);
 }
 */
