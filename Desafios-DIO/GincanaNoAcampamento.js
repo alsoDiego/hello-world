@@ -4,7 +4,7 @@ Desafio
 
     No primeiro dia foi realizada uma gincana em que a atividade constituia em agrupar os alunos em um círculo (organizado no sentido anti-horário) do qual seriam retiradas um a um até que sobrasse apenas um aluno, que seria o vencedor.
 
-    No momento em que entra no círculo, cada aluno recebe uma pequena ficha que contém um valor de 1 a 500. Depois que o círculo é formado, conta-se, iniciando no aluno que está ao lado da primeira que entrou no círculo, o número correspondente à ficha que ela detém. O aluno onde o número contado cair deve ser retirado do grupo, e a contagem inicia novamente segundo a ficha do aluno que acabou de ser eliminado. Para ficar mais interessante, quando o valor que consta na ficha é par, a contagem é feita no sentido horário e quando o valor que consta na ficha é ímpar, a contagem é feita no sentido anti-horário.
+    No momento em que entra no círculo, cada aluno recebe uma pequena ficha que contém um valor de 1 a 500. Depois que o círculo é formado, conta-se, iniciando no aluno que está ao lado da primeira que entrou no círculo, o número correspondente à ficha que ele detém. O aluno onde o número contado cair deve ser retirado do grupo, e a contagem inicia novamente segundo a ficha do aluno que acabou de ser eliminado. Para ficar mais interessante, quando o valor que consta na ficha é par, a contagem é feita no sentido horário e quando o valor que consta na ficha é ímpar, a contagem é feita no sentido anti-horário.
 
     Desenvolva um programa para que no próximo evento o responsável pela brincadeira saiba previamente qual criança irá ser a vencedora de cada grupo, com base nas informações fornecidas.
 
@@ -33,38 +33,49 @@ while (quantidadeDeAlunos !== 0) {
     }
 
     //Determina o vencedor
-    let alunoSai;
-    let indice = 0;
-    let senhaVencedora = [...senhas];
-    let pularPosicoes = senhaVencedora[0];
-    let circulo = senhaVencedora.length;
-    let resto = (pularPosicoes % circulo);
+    let vencedor = [...alunos];
+    let partidaDaContagem = 0;
 
-    for (circulo; circulo > 1; circulo--) {
+    while (quantidadeDeAlunos > 1) {
+        let removerPosicao = 0; // indice a ser removido
+        let pularPosicoes = senhas[0]; // número da senha removida
+        let resto = pularPosicoes % quantidadeDeAlunos;
+
+        (pularPosicoes % 2 === 0) ? pularPosicoes *= -1 : pularPosicoes *= 1;
+/*
         if (pularPosicoes % 2 === 0) {
             //Percorre no sentido anti-horário
-            alunoSai = parseInt(indice - resto);
-            if (Math.abs(alunoSai) >= senhaVencedora.length) {
+            removerPosicao = parseInt(partidaDaContagem - resto);
+            if (Math.abs(removerPosicao) >= quantidadeDeAlunos) {
                 //Força o index para dentro do array
-                alunoSai += senhaVencedora.length;
+                removerPosicao += quantidadeDeAlunos;
             }
         } else {
             //Percorre no sentido horário
-            alunoSai = parseInt(indice + resto);
-            if (alunoSai >= senhaVencedora.length) {
+            removerPosicao = parseInt(partidaDaContagem + resto);
+            if (removerPosicao >= quantidadeDeAlunos) {
                 //Força o index para dentro do array
-                alunoSai -= senhaVencedora.length;
+                removerPosicao -= quantidadeDeAlunos;
             }
         }
-        alunoSai >=0
-            ? pularPosicoes = senhaVencedora[alunoSai]
-            : pularPosicoes = senhaVencedora[senhaVencedora.length + alunoSai];
-        senhaVencedora = senhaVencedora.slice(alunoSai);
-        resto = pularPosicoes % senhaVencedora.length;
-        indice = alunoSai;
+*/
+        pularPosicoes = senhas[removerPosicao];
+        senhas = senhas.slice(removerPosicao);
+        vencedor = vencedor.slice(removerPosicao);
+        quantidadeDeAlunos--;
+
+        if (pularPosicoes % 2 === 0) {
+            partidaDaContagem = (removerPosicao > quantidadeDeAlunos - 1)
+              ? 0
+              : removerPosicao;
+          }
+          else {
+            partidaDaContagem = (removerPosicao > quantidadeDeAlunos - 1)
+              ? quantidadeDeAlunos - 1
+              : removerPosicao - 1;
+          }
+
     }
-    senhaVencedora = parseInt(senhaVencedora);
-    let vencedor = alunos[senhas.indexOf(senhaVencedora)];
     console.log("Vencedor(a): " + vencedor);
 
     quantidadeDeAlunos = parseInt(gets());
