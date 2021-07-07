@@ -3,9 +3,10 @@ function validadorDeSenha(senha) {
     // A mesma não pode ter nenhum caractere de pontuação, acentuação ou espaço;
     // Além disso, a senha pode ter de 6 a 32 caracteres.
 
-    let maiuscula = /[A-Z]/; // deve conter ao menos uma letra maiúscula
-    let minuscula = /[a-z]/;
-    let numero = /\d/;
+    let maiusculas = /[A-Z]/; // deve conter ao menos uma letra maiúscula
+    let minusculas = /[a-z]/;
+    let numeros = /\d/;
+    let pontosAcentosEspaco = /[\wÀ-ú]/;
     let verificaTamanho; // deve conter de 6 a 32 caracteres
     let senhaValida = false;
     let verifica = [...senha];
