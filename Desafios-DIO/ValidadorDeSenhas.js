@@ -11,7 +11,7 @@ function validadorDeSenha(senha) {
     let senhaValida = false;
     let verifica = [...senha];
 
-    // regex 
+    // regex /[A-Z][a-z]\d[\wÀ-ú]/
 
     return senhaValida;
 }
