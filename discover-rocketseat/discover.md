@@ -1,0 +1,1 @@
+Exemplos de códigos e exercícios da trilha Discover, da RocketSeat
