@@ -1,4 +1,4 @@
-var letra = "P";
+/* var letra = "P";
 if (letrasMaiusculas.test(letra)) {
     console.log('sucesso');
 } else {
@@ -52,8 +52,8 @@ function senhaValida(p) {
 console.log(senhaValida("test1234"));
 console.log(senhaValida("Test123@"));
 console.log(senhaValida("Teste123@"));
+*/
 
-/*
 
 //// código fornecido
 
@@ -75,19 +75,19 @@ do {
 /// código modificado
 
 function validadorDeSenha(senha) {
-    // A senha deve conter, no mínimo, uma letra maiúscula, uma letra minúscula e um número;
-    // A mesma não pode ter nenhum caractere de pontuação, acentuação ou espaço;
-    // Além disso, a senha pode ter de 6 a 32 caracteres.
+    let deveConter =
+        /"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,32}$"/;
+        // de 6 a 32 caracteres, incluindo, no mínimo, uma letra maiúscula, uma letra minúscula e um número
 
-    let maiusculas = /[A-Z]/; // deve conter ao menos uma letra maiúscula
-    let minusculas = /[a-z]/;
-    let numeros = /\d/;
-    let pontosAcentosEspaco = /[\wÀ-ú]/;
-    let verificaTamanho; // deve conter de 6 a 32 caracteres
+    let naoDeveConter = /[\wÀ-ú]\d[,.;:]/; // não pode ter nenhum caractere de pontuação, acentuação ou espaço
+
     let senhaValida = false;
-    let verifica = [...senha];
 
-    // regex /[A-Z][a-z]\d[\wÀ-ú]/
+    if (senha.test(deveConter)) {
+        if (!senha.test(naoDeveConter)) {
+            senhaValida = true;
+        }
+    }
 
     return senhaValida;
 }
@@ -101,4 +101,3 @@ do {
         console.log("Senha " + (valido ? "valida." : "invalida."));
     }
 } while (senha !== "");
-*/
