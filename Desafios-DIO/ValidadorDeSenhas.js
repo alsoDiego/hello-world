@@ -83,8 +83,8 @@ function validadorDeSenha(senha) {
 
     let senhaValida = false;
 
-    if (senha.test(deveConter)) {
-        if (!senha.test(naoDeveConter)) {
+    if (deveConter.test(senha)) {
+        if (!naoDeveConter.test(senha)) {
             senhaValida = true;
         }
     }
