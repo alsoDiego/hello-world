@@ -1,6 +1,6 @@
-//////////////////////////////////////////////
-///////// -- CÓDIGO ALTERADO -- /////////////
-////////////////////////////////////////////
+////////////////////////////
+// -- CÓDIGO ALTERADO -- //
+//////////////////////////
 
 let dicionarioDeRegras = {
     tesoura: ['papel','lagarto'],
@@ -23,7 +23,7 @@ for(let i = 0; i < N; i++){
     if (jogo[0] === jogo[1]) {
         resultado = 'empate';
     } else {
-        resultado = (dicionarioDeRegras[jogo.includes(  ] ) ]) ?  fernanda : marcia;
+        resultado = (dicionarioDeRegras[jogo.includes( [ ] ) ]) ?  fernanda : marcia;
     }
 print(resultado);
 }
