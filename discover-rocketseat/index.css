@@ -1,9 +1,12 @@
 * {
-    margin: 0;
+    margin: 20;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
     color: blue;
     font-size: 60px;
+    padding:0px 20px 0px 20px;
     background: gray;
+    width: max-content;
 }
