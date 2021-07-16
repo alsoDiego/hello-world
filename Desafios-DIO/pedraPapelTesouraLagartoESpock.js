@@ -23,16 +23,27 @@ for(let i = 0; i < N; i++){
     if (jogo[0] === jogo[1]) {
         resultado = 'empate';
     } else {
-        resultado = (dicionarioDeRegras[jogo.includes( [ ] ) ]) ?  fernanda : marcia;
+        resultado = (dicionarioDeRegras.jogo[0][jogo.includes( [ ] ) ]) ?  fernanda : marcia;
     }
 print(resultado);
 }
 
-
-//////////////////////////////////////////////
-///////// -- CÓDIGO FORNECIDO -- ////////////
-////////////////////////////////////////////
 /*
+
+ -- LINKS PARA CONSULTA --
+ https://www.geeksforgeeks.org/how-to-use-a-variable-for-a-key-in-a-javascript-object-literal/
+
+ https://www.codegrepper.com/code-examples/javascript/javascript+use+value+of+variable+as+object+key
+
+ https://www.codegrepper.com/code-examples/javascript/how+to+use+variable+as+object+key+in+typescript
+
+ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
+
+ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects
+
+ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
+
+ -- CÓDIGO FORNECIDO --
 
 let dicionarioDeRegras = {
     tesoura: ['papel','lagarto'],
