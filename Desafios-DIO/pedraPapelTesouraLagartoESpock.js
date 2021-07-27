@@ -10,8 +10,8 @@ let dicionarioDeRegras = {
     spock: ['tesoura','pedra']
 };
 
-let  fernanda = 'Fernanda';
-let  marcia = 'Marcia';
+let  fernanda = 'fernanda';
+let  marcia = 'marcia';
 
 let resultado;
 
