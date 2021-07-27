@@ -25,7 +25,7 @@ for(let i = 0; i < N; i++){
     } else {
         resultado = (dicionarioDeRegras.jogo[0][jogo.includes( [ ] ) ]) ?  fernanda : marcia;
     }
-print(resultado);
+console.log(resultado);
 }
 
 /*
