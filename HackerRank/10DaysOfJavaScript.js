@@ -80,3 +80,18 @@ function getPerimeter(length, width) {
     perimeter = 2 * (length + width);
     return perimeter;
 }
+
+// Day 1: Functions
+
+/*
+ * Create the function factorial here
+ */
+function factorial(n) {
+    let result = n;
+    while (n > 1) {
+      n--;  
+      result *= n;  
+    }
+    
+    return result
+}
