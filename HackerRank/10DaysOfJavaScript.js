@@ -143,3 +143,24 @@ function getLetter(s) {
     }
     return letter;
 }
+
+// Day 2: Loops
+/*
+ * Complete the vowelsAndConsonants function.
+ * Print your output using 'console.log()'.
+ */
+function vowelsAndConsonants(s) {
+    let consonants = "";
+
+    while (s.length > 0) {
+        'aeiou'.includes(s[0])
+            ? console.log(s[0])
+            : consonants = consonants.concat(s[0]);
+        s = s.slice(1);
+    }
+    for (let i = 0; i < consonants.length; i++) {
+        console.log(consonants[i]);
+    }
+
+    return
+}
