@@ -28,4 +28,24 @@ function processData(inputString) {
     // The 's' variable above should be printed first.
     console.log(s + secondString);
 
-    
+// Day 2: Operators
+/*
+ * Complete the 'solve' function below.
+ *
+ * The function accepts following parameters:
+ *  1. DOUBLE meal_cost
+ *  2. INTEGER tip_percent
+ *  3. INTEGER tax_percent
+ */
+
+function solve(meal_cost, tip_percent, tax_percent) {
+    // Write your code here
+    let tip = tip_percent/100 * meal_cost; 
+    let tax = tax_percent/100 * meal_cost;
+
+    let total_cost = meal_cost + tip + tax;
+    total_cost = Math.round(total_cost);
+    console.log(total_cost)
+
+    return
+}
