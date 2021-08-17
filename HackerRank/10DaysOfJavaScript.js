@@ -164,3 +164,21 @@ function vowelsAndConsonants(s) {
 
     return
 }
+
+// Day 3: Arrays
+/**
+*   Return the second largest number in the array.
+*   @param {Number[]} nums - An array of numbers.
+*   @return {Number} The second largest number in the array.
+**/
+function getSecondLargest(nums) {
+    // Remove duplicates
+    function removeDuplicates(data) {
+        return data.reduce((acc, curr) => acc.includes(curr) ? acc : [...acc, curr], []);
+    }
+    nums = removeDuplicates(nums);
+
+    // sort the array
+    nums.sort(function (a, b) { return b - a });
+    return nums[1]
+}
