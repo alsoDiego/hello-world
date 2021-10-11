@@ -2,3 +2,13 @@
 /* It's a file for my solutions to the CSS exercises in W3Schools page */
 /*          Source https://www.w3schools.com/css/exercise.asp          */
 
+/* ====================================== */
+/* ============= Selectors ============== */
+/* ====================================== */
+
+/* Exercise 1:
+    Change the color of all <p> elements to "red". */
+    p {
+        color: red;
+    }
+
