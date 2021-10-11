@@ -49,3 +49,7 @@
     Set "background-color: linen" for the page, using an inline style.
     <body style="background-color: linen"> */
 
+/* Exercise 4:
+    Remove all styles, except the external style sheet "mystyle.css"
+    Solution: Remove the whole content of the HTML tag <style> */
+
