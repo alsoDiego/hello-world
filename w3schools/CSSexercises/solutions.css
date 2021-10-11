@@ -75,3 +75,10 @@
         background-image: url("paper.gif");
     }
 
+/* Exercise 3:
+    Set "gradient_bg_vertical.png" as the background image of the page, and repeat it vertically only. */
+    body {
+        background-image: url(gradient_bg_vertical.png);
+        background-repeat: repeat-y;
+    }
+
