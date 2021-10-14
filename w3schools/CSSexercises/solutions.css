@@ -90,3 +90,13 @@
         background-position: right top;
     }
 
+/* Exercise 5:
+    Use the shorthand background property to set background image to "img_tree.png", show it once, in the top right corner. */
+    body {
+        background: url("img_tree.png") no-repeat right top;
+    }
+
+/* ====================================== */
+/* ============= CSS Border ============= */
+/* ====================================== */
+
