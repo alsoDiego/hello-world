@@ -114,4 +114,11 @@
         border-color: red;
     }
 
-
+/* Exercise 3:
+    Change the 3 border properties, so that they only show the border on the top side. */
+    p {
+        border-top: 4px dotted;
+        border-right: none;
+        border-bottom: none;
+        border-left: none;
+    }
