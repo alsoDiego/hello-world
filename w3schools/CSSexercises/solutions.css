@@ -100,3 +100,9 @@
 /* ============= CSS Border ============= */
 /* ====================================== */
 
+/* Exercise 1:
+    Set a "4px", "dotted" border for <p>. */
+    p {
+        border: 4px dotted;
+    }
+
