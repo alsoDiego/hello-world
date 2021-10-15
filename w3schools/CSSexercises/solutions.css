@@ -122,3 +122,10 @@
         border-bottom: none;
         border-left: none;
     }
+
+/* Exercise 4:
+    With the border property: Set the border for p to "10px", "solid" and "green". */
+    p {
+        border: 10px solid green;
+    }
+
