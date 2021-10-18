@@ -151,3 +151,10 @@
         margin: 50px 25px;
     }
 
+/* Exercise 4:
+    Use the margin property to center align the <h1> element. */
+    h1 {
+        margin: 0 auto;
+    }
+
+
