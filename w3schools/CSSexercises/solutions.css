@@ -207,3 +207,9 @@
         width: 200px;
     }
 
+/* Exercise 2:
+    Set the padding of the div to "25px". */
+    div {
+        padding: 25px;
+    }
+
