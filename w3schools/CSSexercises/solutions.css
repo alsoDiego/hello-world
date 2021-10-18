@@ -219,3 +219,9 @@
         border: 25px solid navy;
     }
 
+/* Exercise 4:
+    Set the margin of the div to "25px". */
+    div {
+        margin: 25px;
+    }
+
