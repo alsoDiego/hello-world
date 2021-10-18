@@ -174,3 +174,9 @@
         padding: 50px;
     }
 
+/* Exercise 3:
+    Use the padding property to set the top and bottom paddings for <p> to "25px", and left and right paddings to "50px". */
+    p {
+        padding: 25px 50px;
+    }
+
