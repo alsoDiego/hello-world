@@ -213,3 +213,9 @@
         padding: 25px;
     }
 
+/* Exercise 3:
+    Set the border of the div to "25px solid navy". */
+    div {
+        border: 25px solid navy;
+    }
+
