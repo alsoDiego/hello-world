@@ -190,3 +190,9 @@
         height: 100px;
     }
 
+/* Exercise 2:
+    Set the width of <h1> to "50%". */
+    h1 {
+        width: 50%;
+    }
+
