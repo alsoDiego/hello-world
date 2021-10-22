@@ -248,3 +248,17 @@
     p {
         outline: 10px dotted red;
     }
+
+/* ====================================== */
+/* =============== Text ================= */
+/* ====================================== */
+
+/* Exercise 1:
+    Set the text color for the page to "red", and the text color for <h1> to "blue". */
+    body {
+        color: red;
+    }
+
+    h1 {
+        color: blue;
+    }
