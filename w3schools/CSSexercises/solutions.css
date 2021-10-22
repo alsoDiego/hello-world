@@ -268,3 +268,9 @@
     h1 {
         text-align: center;
     }
+
+/* Exercise 3:
+    Remove the underline from the link. */
+    a {
+        text-decoration: none;
+    }
