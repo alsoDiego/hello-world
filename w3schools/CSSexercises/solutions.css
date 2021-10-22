@@ -234,3 +234,17 @@
     p {
         outline: solid 5px;
     }
+
+/* Exercise 2:
+    Set the outline color for <p> to "green". */
+    p {
+        outline-style: solid;
+        outline-width: 4px;
+        outline-color: green;
+    }
+
+/* Exercise 3:
+    With the outline property: Set the outline for p to "red", "dotted" and "10px". */
+    p {
+        outline: 10px dotted red;
+    }
