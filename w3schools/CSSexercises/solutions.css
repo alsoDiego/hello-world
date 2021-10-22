@@ -262,3 +262,9 @@
     h1 {
         color: blue;
     }
+
+/* Exercise 2:
+    Center align the <h1> element. */
+    h1 {
+        text-align: center;
+    }
