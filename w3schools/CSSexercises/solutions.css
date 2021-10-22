@@ -284,3 +284,8 @@
         text-transform: capitalize;
     }
 
+/* Exercise 5:
+    Indent the first line of the <p> element with 20px. */
+    p {
+        text-indent: 20px;
+    }
