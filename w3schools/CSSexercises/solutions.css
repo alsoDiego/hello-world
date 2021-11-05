@@ -303,3 +303,9 @@
         font-family: "Verdana";
     }
 
+/* Exercise 2:
+    Show <p> elements as "italic" text. */
+    p {
+        font-style: italic;
+    }
+
