@@ -289,3 +289,17 @@
     p {
         text-indent: 20px;
     }
+
+/* ====================================== */
+/* =============== Font ================= */
+/* ====================================== */
+
+/* Exercise 1:
+    Set the font family for the page to "Courier New", and the font family for <h1> to "Verdana". */
+    body {
+        font-family: "Courier New";
+    }
+    body h1 {
+        font-family: "Verdana";
+    }
+
