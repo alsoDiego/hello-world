@@ -324,3 +324,9 @@
         font-weight: bold;
     }
 
+/* Exercise 5:
+    With the font property: Set the <p> to "italic", "20px" and "Verdana". */
+    p {
+        font: italic 20px "Verdana";
+    }
+
