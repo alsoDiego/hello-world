@@ -318,3 +318,9 @@
         font-size: 3em;
     }
 
+/* Exercise 4:
+    Show <p> elements as "bold" text. */
+    p {
+        font-weight: bold;
+    }
+
