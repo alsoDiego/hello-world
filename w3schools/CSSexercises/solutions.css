@@ -348,3 +348,18 @@
     a:visited {
         color: blue;
     }
+
+    /* Exercise 3:
+    Remove underlines for visited and unvisited links, and specify "underline" for the hover and active link states. */
+    a:link {
+        text-decoration: none;
+    }
+    a:visited {
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    a:active {
+        text-decoration: underline;
+    }
