@@ -340,3 +340,11 @@
         color: green;
     }
 
+/* Exercise 2:
+    Set the color for unvisited links to "red", and the color for visited links "blue". */
+    a:link {
+        color: red;
+    }
+    a:visited {
+        color: blue;
+    }
