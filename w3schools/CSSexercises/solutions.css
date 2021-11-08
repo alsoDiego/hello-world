@@ -363,3 +363,18 @@
     a:active {
         text-decoration: underline;
     }
+
+/* Exercise 4:
+    Set the background color for visited and unvisited links to "lightblue", and the background color for the hover and active link states to "yellow". */
+    a:link {
+        background: lightblue;
+    }
+    a:visited {
+        background: lightblue;
+    }
+    a:hover {
+        background: yellow;
+    }
+    a:active {
+        background: yellow;
+    }
