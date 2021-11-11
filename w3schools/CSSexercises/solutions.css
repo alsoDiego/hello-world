@@ -397,3 +397,9 @@
     ul {
         list-style-image: url(bling.jpg);
     }
+
+    /* Exercise 3:
+    Remove the bullets/markers from the list items. */
+    ul {
+        list-style-type: none;
+    }
