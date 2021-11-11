@@ -391,3 +391,9 @@
     ol {
         list-style-type: upper-roman;
     }
+
+    /* Exercise 2:
+    Change the list's item marker to an image called 'bling.jpg': */
+    ul {
+        list-style-image: url(bling.jpg);
+    }
