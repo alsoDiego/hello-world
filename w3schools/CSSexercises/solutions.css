@@ -403,3 +403,10 @@
     ul {
         list-style-type: none;
     }
+
+    /* Exercise 4:
+    Set the list style to I, II, III, instead of 1, 2, 3 for ordered lists. */
+    ol {
+        list-style-type: upper-roman;
+    }
+
