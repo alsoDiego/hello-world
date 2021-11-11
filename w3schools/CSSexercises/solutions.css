@@ -378,3 +378,16 @@
     a:active {
         background: yellow;
     }
+
+/* ====================================== */
+/* =============== Lists ================ */
+/* ====================================== */
+
+    /* Exercise 1:
+    Set the list style for unordered lists to "square", and the list style for ordered lists to "upper-roman". */
+    ul {
+        list-style-type: square;
+    }
+    ol {
+        list-style-type: upper-roman;
+    }
