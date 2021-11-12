@@ -410,3 +410,12 @@
         list-style-type: upper-roman;
     }
 
+/* ====================================== */
+/* =============== Tables =============== */
+/* ====================================== */
+
+    /* Exercise 1:
+    Set the border to "2px solid green" for table, th and td elements. */
+    table, th, td {
+        border: 2px solid green;
+    }
