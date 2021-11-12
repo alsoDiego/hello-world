@@ -425,3 +425,7 @@
     table {
         border-collapse: collapse;
     }
+
+    /* Exercise 3:
+    Use inline styles to set the width of the table to "100%".
+    <table style="width:100%"> */
