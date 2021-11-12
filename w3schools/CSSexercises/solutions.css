@@ -419,3 +419,9 @@
     table, th, td {
         border: 2px solid green;
     }
+
+    /* Exercise 2:
+    Collapse the table borders into a single border.*/
+    table {
+        border-collapse: collapse;
+    }
