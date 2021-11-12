@@ -441,3 +441,10 @@
     th {
         padding: 15px;
     }
+
+    /* Exercise 6:
+    Set the background color for <th> elements to "lightblue". */
+    th {
+        background: lightblue;
+    }
+
