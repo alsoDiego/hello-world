@@ -435,3 +435,9 @@
     td {
         text-align: right;
     }
+
+    /* Exercise 5:
+    Set the padding in <th> elements to "15px". */
+    th {
+        padding: 15px;
+    }
