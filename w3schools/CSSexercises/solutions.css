@@ -429,3 +429,9 @@
     /* Exercise 3:
     Use inline styles to set the width of the table to "100%".
     <table style="width:100%"> */
+
+    /* Exercise 4:
+    Set the text alignment in <td> elements to "right". */
+    td {
+        text-align: right;
+    }
